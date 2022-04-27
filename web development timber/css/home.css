@@ -1,0 +1,59 @@
+
+        body {
+            background-image: url('/images/Home.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        nav {
+            background-color: rgba(9, 78, 9, 0.726);
+            
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 50px;
+            word-spacing: 10px;
+            text-align: right;
+            margin-right: 0px;
+            border-radius: 10px;
+        }
+        
+        a {
+            color: black;
+           
+        }
+        
+        a:hover {
+             color: white;
+             background-color: transparent;
+            text-decoration: underline;
+        }
+       
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        address {
+            display: block;
+            font-style: italic;
+        }
+        
+        main {
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-left: 60%;
+            text-align: left;
+            height: 100%;
+        }
+        
+        footer {
+            height: 100%;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgba(59, 59, 59, 0.623);
+            border-radius: 30px;
+        }
+    

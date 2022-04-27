@@ -1,0 +1,33 @@
+
+nav {
+    background-color: rgba(9, 78, 9, 0.726);
+    height: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    word-spacing: 10px;
+    text-align: right;
+    margin-right: 0px;
+    border-radius: 10px;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(27, 70, 27);
+}
+
+h1 {
+    text-align: center;
+}
+
+address {
+    display: block;
+    font-style: italic;
+   
+}
+a{
+    color: black;
+}
+a:hover{
+    color: white;
+}

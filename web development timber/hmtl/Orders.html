@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/orders.css">
+
+    <title>Orders</title>
+    <script src="/javascript/TimberWebScript.js"></script>
+    
+    
+</head>
+
+<body>
+    <nav>
+        <a href="home.html">HOME</a>
+        <a href="services.html">SERVICES</a>
+        <a href="orders.html">ORDERS</a>
+        <a href="about us.html">ABOUT US</a>
+
+        <hr>
+        <h1>TIMBER YARD SERVICES </h1>
+
+    </nav>
+    <table>
+        <caption>Pricing</caption>
+        <tr>
+            <th>type of service</th>
+            <th>product</th>
+            <th>unit price</th>
+        </tr>
+        <tr>
+            <td rowspan="5" class="rowspan1"> Seedlings</td>
+            <td>eucalyptus</td>
+            <td>kshs. 50 </td>
+        </tr>
+        <tr>
+
+            <td>pine</td>
+            <td>kshs. 50 </td>
+        </tr>
+        <tr>
+
+            <td>bamboo</td>
+            <td>kshs. 50 </td>
+        </tr>
+        <tr>
+
+            <td>jacaranda</td>
+            <td>kshs. 50 </td>
+        </tr>
+        <tr>
+
+            <td>african cypress</td>
+            <td>kshs. 50 </td>
+        </tr>
+
+        <tr>
+            <td rowspan="5">MANUFACTURED PRODUCTS </td>
+            <td>Poles</td>
+            <td> KSHS 10,000 </td>
+        </tr>
+        <tr>
+
+            <td>Plywood</td>
+            <td>KSHS 10,000</td>
+        </tr>
+        <tr>
+            <td>Decorative overlays</td>
+            <td>Kshs. 10000</td>
+        </tr>
+        <tr>
+
+            <td>-Hardwood lumber</td>
+            <td>kshs. 10000</td>
+        </tr>
+        <tr>
+
+            <td>-pulpwood</td>
+            <td>Kshs. 10000</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="rowspan1">Delivery services</td>
+            <td>trucks</td>
+            <td>100,000</td>
+        </tr>
+        <tr>
+            <td>pickup</td>
+            <td>kshs. 20,000</td>
+        </tr>
+
+
+
+
+    </table>
+
+
+    <h2>MAKING AN ORDER.</h2>
+    <div>
+        <form action="">
+
+            <p>To make an order please fill out the following details.</p>
+            <i>
+
+            <label for="FullNames">Full Names: </label>
+            <input type="text" name="FullNames" style="width: 400px;">
+
+            <label for="phoneNumber">Phone Number: </label>
+            <input type="tel" name="phoneNumber"><br><br>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email"style="width: 400px;"><br><br>
+
+           
+            <table>
+                <caption>Pricing</caption>
+                <tr>
+                    <th>type of service</th>
+                    <th>product</th>
+                    <th>Number of quantity</th>
+                </tr>
+                <tr>
+                    <td> Seedlings</td>
+                    <td>eucalyptus</td>
+                    <td> <input type="number" name="quantity"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>pine</td>
+                    <td> <input type="number" name="quantity"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>bamboo</td>
+                    <td> <input type="number" name="quantity"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>jacaranda</td>
+                    <td> <input type="number" name="quantity"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>african cypress</td>
+                    <td> <input type="number" name="quantity"></td>
+                </tr>
+
+                <tr>
+                    <td>MANUFACTURED PRODUCTS </td>
+                    <td>Poles</td>
+                    <td> <input type="number" name="quantity"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Plywood</td>
+                    <td> <input type="number" name="quantity"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Decorative overlays</td>
+                    <td> <input type="number" name="quantity"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>-Hardwood lumber</td>
+                    <td> <input type="number" name="quantity"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>-pulpwood</td>
+                    <td> <input type="number" name="quantity"></td>
+                </tr>
+                <tr>
+                    <td>Delivery services</td>
+                    <td>trucks</td>
+                    <td> <input type="number" name="quantity"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>pickup</td>
+                    <td> <input type="number" name="quantity"></td>
+                </tr>
+
+            </table>
+            <br>
+
+            <label for="Region"> Region of delivery: </label>
+
+            <select name="service" id="service">
+                <option value="" selected> [select one]</option>
+                <option value="Nairobi Region (the capital city)">Nairobi Region (The capital city)</option>
+                <option value="Central Region">Central Region</option>
+                <option value="Eastern Region">Eastern Region</option>
+                <option value="North Eastern Region">North Eastern Region</option>
+                <option value="Nyanza Region">Nyanza Region</option>
+                <option value="Rift Valley Region">Rift Valley Region</option>
+                <option value="Western Region">Western Region</option>
+             </select>
+             <p>If current loaction is customers delivery location please:</p> 
+        
+             <button onclick="getLocation()">Click here</button>
+     
+            <br>
+            <p>To reset all the values click here:</p>
+             <input type="reset" onclick="alert('You are reseting all the form-data to the default values')"value="reset all values"> 
+                <br>
+            <p>Please click here to confirm your order.</p>
+                <button type="submit " onclick="show_confirm()" value="submit   ">Submit </button>
+                <script>
+                    function show_confirm(){
+                        var r = confirm("Click on ok to confirm the order.");
+                         if (r==true){
+                            alert("You have successfully completed you order. You will receive a text message and email with a code to confirm the order.Thank You.");
+                        }
+                        else{
+                            alert("You have successfully cancelled the order. Thank You");
+                        }
+                    }
+
+                </script>
+        </i>
+        </form>
+    </div>
+    <p style="text-align: center;">For any enquiries please contact our help line: +25479876797878 <br>
+    <I>ALL RIGHTS RESERVED. 2022</I></p>
+
+
+
+    
+</body>
+
+</html>
